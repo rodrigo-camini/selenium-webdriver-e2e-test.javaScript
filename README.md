@@ -12,7 +12,7 @@ This project implements automated tests using Selenium WebDriver to validate web
 - Modular test structure with reusable methods.
 
 ## Project Structure
-📦 project-root ┣ 📂 src ┃ ┣ 📂 main ┃ ┃ ┣ 📂 java ┃ ┃ ┃ ┣ 📂 pages # Page Object Model classes ┃ ┃ ┃ ┣ 📂 utils # Utility classes (waits, listeners, etc.) ┃ ┃ ┃ ┗ 📜 BasePage.java # Common methods for all pages ┃ ┣ 📂 test ┃ ┃ ┣ 📂 java ┃ ┃ ┃ ┣ 📂 tests # Test cases ┃ ┃ ┃ ┗ 📜 BaseTests.java # Base test setup ┣ 📜 pom.xml # Maven dependencies ┣ 📜 README.md # Project documentation ┗ 📜 CHANGES_DURING_COURSE.md # Course modifications log
+project-root ├── src │ ├── main │ │ ├── java │ │ │ ├── pages # Page Object Model classes │ │ │ ├── utils # Utility classes (waits, listeners, etc.) │ │ │ └── BasePage.java # Common methods for all pages │ ├── test │ │ ├── java │ │ │ ├── tests # Test cases │ │ │ └── BaseTests.java # Base test setup ├── pom.xml # Maven dependencies ├── README.md # Project documentation └── CHANGES_DURING_COURSE.md # Course modifications log
 
 ## Development Setup
 This project is developed using **Visual Studio Code** with the following recommended extensions:
