@@ -13,16 +13,22 @@ This project implements automated tests using Selenium WebDriver to validate web
 
 ## Project Structure
 ```
-project-root ├── src │ ├── main │ │ ├── java │ │ │ ├── pages # Page Object Model classes │ │ │ ├── utils # Utility classes (waits, listeners, etc.) │ │ │ └── BasePage.java # Common methods for all pages │ ├── test │ │ ├── java │ │ │ ├── tests # Test cases │ │ │ └── BaseTests.java # Base test setup ├── pom.xml # Maven dependencies ├── README.md # Project documentation └── CHANGES_DURING_COURSE.md # Course modifications log
+project-root
+ ├── src
+ │   ├── main
+ │   │   ├── java
+ │   │   │   ├── pages            # Page Object Model classes
+ │   │   │   ├── utils            # Utility classes (waits, listeners, etc.)
+ │   │   │   └── BasePage.java    # Common methods for all pages
+ │   ├── test
+ │   │   ├── java
+ │   │   │   ├── tests            # Test cases
+ │   │   │   └── BaseTests.java   # Base test setup
+ ├── pom.xml                      # Maven dependencies
+ ├── README.md                     # Project documentation
+ └── CHANGES_DURING_COURSE.md       # Course modifications log
 ```
 
-## Development Setup
-This project is developed using **Visual Studio Code** with the following recommended extensions:
-
-- **Java Extension Pack** (for Java development)
-- **JavaDoc Generator** (to simplify documentation with JavaDoc)
-
-While any IDE can be used, we recommend VS Code for consistency and ease of use.
 
 ## Setup Instructions
 ### Prerequisites
@@ -33,7 +39,7 @@ While any IDE can be used, we recommend VS Code for consistency and ease of use.
 ### Installation
 1. Clone this repository:
    ```
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/your-repo.git](https://github.com/rodrigo-camini/selenium-webdriver-e2e-test.javaScript.git
    ```
 Navigate to the project directory:
 ```
@@ -44,13 +50,15 @@ Install dependencies:
 mvn clean install
 ```
 
-```
-Running the Tests
-```
+## Development Setup
+This project is developed using **Visual Studio Code** with the following recommended extensions:
 
-```
+- **Java Extension Pack** (for Java development)
+- **JavaDoc Generator** (to simplify documentation with JavaDoc)
+
+Running the Tests
+
 Using Maven
-```
 
 Run all tests with:
 ```
@@ -68,3 +76,7 @@ Run tests using TestNG XML configuration:
 ```
 mvn test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml
 ```
+
+Running Tests via UI
+
+It is also possible to execute tests via the UI. When accessing a test class in Visual Studio Code or another compatible IDE, you can click on the Run/Play button next to the test method to execute it directly. This provides a quick and easy way to run individual test cases without needing to use the command line.
