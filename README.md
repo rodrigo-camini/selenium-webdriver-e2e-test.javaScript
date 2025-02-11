@@ -1,100 +1,69 @@
-Automated Testing Project with Selenium
+# Automated Testing Project with Selenium
 
-Overview
-
+## Overview
 This project implements automated tests using Selenium WebDriver to validate web application functionalities. The tests are structured following the Page Object Model (POM) and utilize TestNG as the test framework.
 
-Features
+## Features
+- Automated UI tests using **Selenium WebDriver**.
+- Test execution managed with **TestNG**.
+- Page Object Model (POM) for maintainability.
+- **WebDriverEventListener** implemented for logging WebDriver actions.
+- Various waiting strategies (`WebDriverWait` and `FluentWait`) to ensure test stability.
+- Modular test structure with reusable methods.
 
-Automated UI tests using Selenium WebDriver.
+## Project Structure
+📦 project-root ┣ 📂 src ┃ ┣ 📂 main ┃ ┃ ┣ 📂 java ┃ ┃ ┃ ┣ 📂 pages # Page Object Model classes ┃ ┃ ┃ ┣ 📂 utils # Utility classes (waits, listeners, etc.) ┃ ┃ ┃ ┗ 📜 BasePage.java # Common methods for all pages ┃ ┣ 📂 test ┃ ┃ ┣ 📂 java ┃ ┃ ┃ ┣ 📂 tests # Test cases ┃ ┃ ┃ ┗ 📜 BaseTests.java # Base test setup ┣ 📜 pom.xml # Maven dependencies ┣ 📜 README.md # Project documentation ┗ 📜 CHANGES_DURING_COURSE.md # Course modifications log
 
-Test execution managed with TestNG.
+markdown
+Copiar
+Editar
 
-Page Object Model (POM) for maintainability.
+## Development Setup
+This project is developed using **Visual Studio Code** with the following recommended extensions:
 
-Modular test structure with reusable methods.
+- **Java Extension Pack** (for Java development)
+- **JavaDoc Generator** (to simplify documentation with JavaDoc)
 
-Project Structure
+While any IDE can be used, we recommend VS Code for consistency and ease of use.
 
-📦 project-root
- ┣ 📂 src
- ┃ ┣ 📂 main
- ┃ ┃ ┣ 📂 java
- ┃ ┃ ┃ ┣ 📂 pages            # Page Object Model classes
- ┃ ┃ ┃ ┣ 📂 utils            # Utility classes (waits, listeners, etc.)
- ┃ ┃ ┃ ┗ 📜 BasePage.java    # Common methods for all pages
- ┃ ┣ 📂 test
- ┃ ┃ ┣ 📂 java
- ┃ ┃ ┃ ┣ 📂 tests            # Test cases
- ┃ ┃ ┃ ┗ 📜 BaseTests.java   # Base test setup
- ┣ 📜 pom.xml                # Maven dependencies
- ┣ 📜 README.md              # Project documentation
- ┗ 📜 CHANGES_DURING_COURSE.md  # Course modifications log
+## Setup Instructions
+### Prerequisites
+- Java 11 or later
+- Maven installed (`mvn -version` to check)
+- ChromeDriver installed and set in the system path
 
-Development Setup
-
-This project is developed using Visual Studio Code with the following recommended extensions:
-
-Java Extension Pack (for Java development)
-
-JavaDoc Generator (to simplify documentation with JavaDoc)
-
-Setup Instructions
-
-Prerequisites
-
-Java 11 or later
-
-Maven installed (mvn -version to check)
-
-ChromeDriver installed and set in the system path
-
-Installation
-
-Clone this repository:
-
-git clone https://github.com/your-repo.git
-
+### Installation
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/your-repo.git
 Navigate to the project directory:
-
+sh
+Copiar
+Editar
 cd project-root
-
 Install dependencies:
-
+sh
+Copiar
+Editar
 mvn clean install
-
 Running the Tests
-
 Using Maven
-
 Run all tests with:
 
+sh
+Copiar
+Editar
 mvn test
-
 Run a specific test class:
 
+sh
+Copiar
+Editar
 mvn -Dtest=DropdownTests test
-
 Using TestNG
-
 Run tests using TestNG XML configuration:
 
+sh
+Copiar
+Editar
 mvn test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml
-
-Key Implementations
-
-Page Object Model (POM)
-
-Contribution
-
-Fork the repository.
-
-Create a feature branch (git checkout -b feature-name).
-
-Commit your changes (git commit -m 'Description of changes').
-
-Push to the branch (git push origin feature-name).
-
-Open a Pull Request.
-
-
