@@ -1,15 +1,12 @@
 # Automated Testing Project with Selenium
 
 ## Overview
-This project implements automated tests using Selenium WebDriver to validate web application functionalities. The tests are structured following the Page Object Model (POM) and utilize TestNG as the test framework.
+This project is part of a free Test Automation University course led by Angie Jones. It focuses on implementing automated tests with Selenium WebDriver, using the Page Object Model (POM) and TestNG to ensure structured and maintainable test automation.
 
 ## Features
 - Automated UI tests using **Selenium WebDriver**.
 - Test execution managed with **TestNG**.
 - Page Object Model (POM) for maintainability.
-- **WebDriverEventListener** implemented for logging WebDriver actions.
-- Various waiting strategies (`WebDriverWait` and `FluentWait`) to ensure test stability.
-- Modular test structure with reusable methods.
 
 ## Project Structure
 ```
