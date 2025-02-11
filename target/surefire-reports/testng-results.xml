@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-11T05:14:26Z" name="Surefire suite" finished-at="2025-02-11T05:14:31Z" duration-ms="4459">
+    <groups>
+    </groups>
+    <test started-at="2025-02-11T05:14:26Z" name="Surefire test" finished-at="2025-02-11T05:14:31Z" duration-ms="4459">
+      <class name="dropdown.DropdownTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:dropdown.DropdownTests@2df32bf7]" started-at="2025-02-11T05:14:26Z" name="setUp" finished-at="2025-02-11T05:14:30Z" duration-ms="3578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:dropdown.DropdownTests@2df32bf7]" started-at="2025-02-11T05:14:30Z" name="goHome" finished-at="2025-02-11T05:14:30Z" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testSelectedOption()[pri:0, instance:dropdown.DropdownTests@2df32bf7]" started-at="2025-02-11T05:14:30Z" name="testSelectedOption" finished-at="2025-02-11T05:14:31Z" duration-ms="513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectedOption -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:dropdown.DropdownTests@2df32bf7]" started-at="2025-02-11T05:14:31Z" name="recordFailure" finished-at="2025-02-11T05:14:31Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSelectedOption status=SUCCESS method=DropdownTests.testSelectedOption()[pri:0, instance:dropdown.DropdownTests@2df32bf7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure -->
+        <test-method is-config="true" signature="teatDown()[pri:0, instance:dropdown.DropdownTests@2df32bf7]" started-at="2025-02-11T05:14:31Z" name="teatDown" finished-at="2025-02-11T05:14:31Z" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teatDown -->
+      </class> <!-- dropdown.DropdownTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
